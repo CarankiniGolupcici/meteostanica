@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import render_template
 import Adafruit_DHT
-app = Flask(__name__)
+app = Flask(__name__, root_path="html")
 @app.route('/')
 def kurton():
     humidity, temperature =penis()
