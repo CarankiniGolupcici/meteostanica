@@ -1,0 +1,27 @@
+body {background-color: rgb(24,24,24); !important;}
+#naslov{
+	text-align: center;
+	margin-top: 63px;
+	font-family: 'Bitter', serif;
+	font-size: 35px;
+	color: ghostwhite;
+}
+#speedometerWraper-myValues2 {
+	padding-left: 100px;
+	padding-top: 0px;
+}
+.font-pritisak{
+	text-align: center;
+	font-family: 'Patua One', cursive;
+	font-size: 19px;
+	padding-top: 100px;
+	padding-right: 915px;
+	color: ghostwhite;
+}
+.pritisak{
+    padding-left: 140px;
+
+    color: ghostwhite;
+    font-size: 22px;
+    font-family: sans-serif;
+}
