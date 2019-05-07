@@ -27,17 +27,17 @@ opts = {
         subColor: '#666666'
 
     },
-    percentColors: percentColors = [[0.0, "#a9d70b"], [0.50, "#f9c802"], [1.0, "#ff0000"]],
+    percentColors: percentColors = [[0.0, "#ff0000"], [0.50, "#f9c802"], [1.0, "#252CE8"]],
     staticLabels: {
         font: "14px sans-serif",  // Specifies font
-        labels: [0, 500, 750, 1000, 1500,],  // Print labels at these values
+        labels: [0, 25, 50, 75, 100],  // Print labels at these values
         color: "#FFFFFF",  // Optional: Label text color
         fractionDigits: 0  // Optional: Numerical precision. 0=round off.
     },
 };
-var target = document.getElementById('foo2'); // your canvas element
+var target = document.getElementById('foo3'); // your canvas element
 var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
-gauge.maxValue = 1500; // set max gauge value
+gauge.maxValue = 100; // set max gauge value
 gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
 gauge.animationSpeed = 32; // set animation speed (32 is default value)
-gauge.set(950); // set actual value
+gauge.set(44); // set actual value
