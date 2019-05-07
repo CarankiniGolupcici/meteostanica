@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b5f19443-d460-49bc-b5dd-e27c21a6fd7c" name="html" url="http://html:8090">
+        <fileTransfer port="0" mountedRoot="C:\Users\Administrator\Desktop\meteostanica\html" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,9 +1,9 @@
-body {background-color: rgb(24,24,24); !important;}
+body {background-color: rgb(24,24,24) !important;}
 #naslov{
 	text-align: center;
-	margin-top: 63px;
+	margin-top: 103px;
 	font-family: 'Bitter', serif;
-	font-size: 35px;
+	font-size: 38px;
 	color: ghostwhite;
 }
 #speedometerWraper-myValues2 {
@@ -19,9 +19,13 @@ body {background-color: rgb(24,24,24); !important;}
 	color: ghostwhite;
 }
 .pritisak{
-    padding-left: 140px;
-
-    color: ghostwhite;
-    font-size: 22px;
-    font-family: sans-serif;
+	color: ghostwhite;
+	font-size: 22px;
+	font-family: sans-serif;
+}
+.sredina {
+	text-align: center;
+}
+.middle {
+	padding-top: 11%;
 }
