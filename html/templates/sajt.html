@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="/static/css/animation 1.css">
     <link rel="stylesheet" type="text/css" href="/static/css/css.css">
@@ -14,48 +14,33 @@
 
 
 </head>
-<body class="bg">
-    <div class="animated bounceInDown" id="naslov">
-        <p>Podaci sa meteostanice</p>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <canvas id="foo"></canvas>
-                <p class="pritisak">250</p>
-            </div>
-            <div class="col-sm">
-                <canvas id="foo2"></canvas>
-                <p class="pritisak">250</p></div>
-            <div class="col-sm">
-                <canvas id="foo3"></canvas>
-                <p class="pritisak">{{pritisak}}</p>
-            </div>
-        </div>
-    </div>
-<!--<div>
-    <p class="font-pritisak">Pritisak</p>
+<body >
+<div class="animated bounceInDown" id="naslov">
+    <p>Podaci sa meteostanice</p>
 </div>
-<div id="speedometerWraper-myValues2">
-    <style>#speedometerWraper-myValues2 .envelope{width  :300px;height :300px;}#speedometerWraper-myValues2 .speedNobe{height            :4px;top               :148px;transform         :rotate(-45deg);-webkit-transform :rotate(-45deg);-moz-transform    :rotate(-45deg);-o-transform      :rotate(-45deg);}#speedometerWraper-myValues2 .speedPosition{width  :80px;height :80px;top  :110px;left :110px;}#speedometerWraper-myValues2 .speedNobe div{width  :95px;left :13px;}#speedometerWraper-myValues2 .nob{width  :20px;height :4px;}#speedometerWraper-myValues2 .numb{width  :30px;height :16px;}#speedometerWraper-myValues2 .midNob{width  :10px;height :3px;}</style>
-    <div class="envelope">
-        <div class="speedNobe" style="transform: rotate(30deg);">,
-            <div></div>
+<div class="middle">
+    <div class="container">
+        <div class="row sredina">
+            <div class="sredina col-sm">
+                    <canvas id="foo" style="height: 170px;" ></canvas>
+                    <p class="pritisak">mbar</p>
+            </div>
+            <div class="sredina col-sm">
+
+                    <canvas id="foo2" style="height: 170px;"></canvas>
+                    <p class="pritisak">C°</p>
+
+            </div>
+            <div class="sredina col-sm">
+
+                    <canvas id="foo3" style="height: 170px;"></canvas>
+                    <p class="pritisak">%</p>
+
+            </div>
         </div>
-        <div class="speedPosition">50<br>mbar</div>
-        <div class="nob bright" style="left:51.638335216160755px;top:236.4150224601477px;transform         :rotate(-45deg);-webkit-transform :rotate(-45deg);-o-transform      :rotate(-45deg);-moz-transform    :rotate(-45deg)"></div>
-        <div class="numb bright" style="left:78.37960135563574px;top:198.65881617130634px;">0</div>
-        <div class="nob  midNob bright" style="left:20px;top:148.5px;transform         :rotate(0deg);-webkit-transform :rotate(0deg);-o-transform      :rotate(0deg);-moz-transform    :rotate(0deg)"></div>
-        <div class="numb bright"></div><div class="nob" style="left:51.638335216160755px;top:59.584977539852304px;transform         :rotate(45deg);-webkit-transform :rotate(45deg);-o-transform      :rotate(45deg);-moz-transform    :rotate(45deg)"></div>
-        <div class="numb" style="left:78.37960135563574px;top:71.34118382869366px;">60</div>
-        <div class="nob  midNob" style="left:145.07545914605475px;top:23.50002277633297px;transform         :rotate(90deg);-webkit-transform :rotate(90deg);-o-transform      :rotate(90deg);-moz-transform    :rotate(90deg)"></div>
-        <div class="numb"></div><div class="nob danger" style="left:228.4683479161363px;top:59.69172509334439px;transform         :rotate(135deg);-webkit-transform :rotate(135deg);-o-transform      :rotate(135deg);-moz-transform    :rotate(135deg)"></div>
-        <div class="numb danger" style="left:205.69721049961814px;top:71.41804206720795px;">120</div>
-        <div class="nob danger midNob" style="left:269.9999088946764px;top:148.6509182646106px;transform         :rotate(180deg);-webkit-transform :rotate(180deg);-o-transform      :rotate(180deg);-moz-transform    :rotate(180deg)"></div>
-        <div class="numb"></div>
-        <div class="nob danger" style="left:228.2548528480532px;top:236.5216411323721px;transform         :rotate(225deg);-webkit-transform :rotate(225deg);-o-transform      :rotate(225deg);-moz-transform    :rotate(225deg)"></div>
-        <div class="numb danger" style="left:205.5434940505983px;top:198.73558161530792px;">180</div>
     </div>
-</div>-->
-    <script src="/static/js/manometar.js"></script>
+</div>
+    <script src="/static/js/pritisak%20vazduha.js"></script>
+    <script src="/static/js/temperatura.js"></script>
+    <script src="/static/js/vlaznost%20vazduha.js"></script>
 </body>
