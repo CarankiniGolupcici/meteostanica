@@ -36,8 +36,8 @@ opts = {
     },
 };
 var target = document.getElementById('foo2'); // your canvas element
-var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
-gauge.maxValue = 60; // set max gauge value
-gauge.setMinValue(-20);  // Prefer setter over gauge.minValue = 0
-gauge.animationSpeed = 32; // set animation speed (32 is default value)
-gauge.set(25); // set actual value
+var gaugetemp = new Gauge(target).setOptions(opts); // create sexy gauge!
+gaugetemp.maxValue = 60; // set max gauge value
+gaugetemp.setMinValue(-20);  // Prefer setter over gauge.minValue = 0
+gaugetemp.animationSpeed = 32; // set animation speed (32 is default value)
+gaugetemp.set(25); // set actual value

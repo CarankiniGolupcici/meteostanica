@@ -1,7 +1,7 @@
 body {background-color: rgb(24,24,24) !important;}
 #naslov{
 	text-align: center;
-	margin-top: 103px;
+	padding-top: 0px;
 	font-family: 'Bitter', serif;
 	font-size: 38px;
 	color: ghostwhite;
@@ -29,3 +29,5 @@ body {background-color: rgb(24,24,24) !important;}
 .middle {
 	padding-top: 11%;
 }
+.ikona {
+	position: revert;
