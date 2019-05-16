@@ -1,0 +1,1 @@
+select id, vreme, temperatura_1, temperatura_2, pritisak, vlaznost_vazduha FROM wstation.meteo_uslovi WHERE id=7

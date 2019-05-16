@@ -1,0 +1,1 @@
+SELECT id, vreme FROM wstation.meteo_uslovi order by id desc limit 5
