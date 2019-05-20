@@ -31,3 +31,8 @@ body {background-color: rgb(24,24,24) !important;}
 }
 .ikona {
 	position: revert;
+}
+.font{
+	color: ghostwhite;
+	font-family: 'Open Sans', sans-serif;
+}
