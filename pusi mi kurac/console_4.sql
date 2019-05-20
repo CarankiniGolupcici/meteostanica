@@ -1,0 +1,1 @@
+SELECT avg(temperatura_1) as prosecna_temperatura1 FROM wstation.meteo_uslovi
