@@ -1,8 +1,7 @@
 body {
-  font-family: "Open Sans", sans-serif;
   line-height: 1.25;
+  background-color: rgb(24,24,24) !important;
 }
-
 table {
   border: 1px solid #ccc;
   border-collapse: collapse;
@@ -18,7 +17,7 @@ table caption {
 }
 
 table tr {
-  background-color: #f8f8f8;
+  background-color: rgb(38,38,38);
   border: 1px solid #ddd;
   padding: .35em;
 }
@@ -27,12 +26,16 @@ table th,
 table td {
   padding: .625em;
   text-align: center;
+  color: ghostwhite;
+  font-family: 'Open Sans', sans-serif;
 }
 
 table th {
   font-size: .85em;
   letter-spacing: .1em;
   text-transform: uppercase;
+  color: ghostwhite;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (max-width: 600px) {

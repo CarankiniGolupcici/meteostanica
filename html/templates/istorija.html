@@ -4,42 +4,65 @@
     <meta charset="UTF-8">
     <title>tities</title>
     <link rel="stylesheet" href="/static/css/istorija.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/css.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <div>
+        <a href="sajt.html">
+<span style="font-size: 2em; color: ghostwhite;">
+<i class="far fa-sun"></i>
+</span>
+        </a>
+    </div>
 </head>
 <body>
 <table>
-    <caption>Statement Summary</caption>
+    <caption class="font">Istorija</caption>
     <thead>
     <tr>
-        <th scope="col">Account</th>
-        <th scope="col">Due Date</th>
-        <th scope="col">Amount</th>
-        <th scope="col">Period</th>
+        <th scope="col">Vreme</th>
+        <th scope="col">Pritisak</th>
+        <th scope="col">Prva Temperatura</th>
+        <th scope="col">Druga Temperatura</th>
+        <th scope="col">Prosecna Temperatura</th>
+        <th scope="col">Vlaznost Vazduha</th>
     </tr>
     </thead>
     <tbody>
+    {% for pritisak, temperatura_1, temperatura_2, vlaznost in entries %}
     <tr>
-        <td data-label="Account">Visa - 3412</td>
-        <td data-label="Due Date">04/01/2016</td>
-        <td data-label="Amount">$1,190</td>
-        <td data-label="Period">03/01/2016 - 03/31/2016</td>
+        <td data-label="Vreme">1.1.2019.</td>
+        <td data-label="Pritisak">{{pritisak}}</td>
+        <td data-label="Prva Temperatura">{{temperatura_1}}</td>
+        <td data-label="Druga Temperatura">{{temperatura_2}}</td>
+        <td data-label="Prosecna Temperatura ">5</td>
+        <td data-label="Vlaznost Vazduha">{{vlaznost}}</td>
+    </tr>
+    {% endfor %}
+
+
+    <tr>
+        <td scope="row" data-label="Vreme">Visa - 6076</td>
+        <td data-label="Pritisak">03/01/2016</td>
+        <td data-label="Prva Temperatura">$2,443</td>
+        <td data-label="Druga Temperatura">02/01/2016 - 02/29/2016</td>
+        <td data-label="Prosecna Temperatura">02/01/2016 - 02/29/2016</td>
+        <td data-label="Vlaznost Vazduha">02/01/2016 - 02/29/2016</td>
     </tr>
     <tr>
-        <td scope="row" data-label="Account">Visa - 6076</td>
-        <td data-label="Due Date">03/01/2016</td>
-        <td data-label="Amount">$2,443</td>
-        <td data-label="Period">02/01/2016 - 02/29/2016</td>
+        <td scope="row" data-label="Vreme">Corporate AMEX</td>
+        <td data-label="Pritisak">03/01/2016</td>
+        <td data-label="Prva Temperatura">$1,181</td>
+        <td data-label="Druga Temperatura">02/01/2016 - 02/29/2016</td>
+        <td data-label="Prosecna Temperatura">02/01/2016 - 02/29/2016</td>
+        <td data-label="Vlaznost Vazduha">02/01/2016 - 02/29/2016</td>
     </tr>
     <tr>
-        <td scope="row" data-label="Account">Corporate AMEX</td>
-        <td data-label="Due Date">03/01/2016</td>
-        <td data-label="Amount">$1,181</td>
-        <td data-label="Period">02/01/2016 - 02/29/2016</td>
-    </tr>
-    <tr>
-        <td scope="row" data-label="Acount">Visa - 3412</td>
-        <td data-label="Due Date">02/01/2016</td>
-        <td data-label="Amount">$842</td>
-        <td data-label="Period">01/01/2016 - 01/31/2016</td>
+        <td scope="row" data-label="Vreme">Visa - 3412</td>
+        <td data-label="Pritisak">02/01/2016</td>
+        <td data-label="Prva Temperatura">$842</td>
+        <td data-label="Druga Temperatura">01/01/2016 - 01/31/2016</td>
+        <td data-label="Prosecna Temperatura">02/01/2016 - 02/29/2016</td>
+        <td data-label="Vlaznost Vazduha">02/01/2016 - 02/29/2016</td>
     </tr>
     </tbody>
 </table>
