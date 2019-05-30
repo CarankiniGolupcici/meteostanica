@@ -8,3 +8,8 @@ class senzori:
             return humidity, temperature
         else:
             return 0,0
+    def getPressure(self):
+        if pressure is not None:
+            return pressure
+        else:
+            return 0

@@ -24,8 +24,10 @@ def jaje():
 @app.route('/')
 def kurton():
     humidity, temperature = sensor_helper.getHumidityAndTemp()
-    return render_template('sajt.html', temperatura=temperature, vazduh=humidity, pritisak=1250)
+    pressure = sensor_helper.getPressure()
+    return render_template('sajt.html', temperatura=temperature, vazduh=humidity, pritisak=pressure)
 
 
 if __name__ == '__main__':
+    app.debug = True
     app.run()
