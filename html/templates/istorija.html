@@ -34,36 +34,10 @@
         <td data-label="Pritisak">{{element['pritisak']}}</td>
         <td data-label="Prva Temperatura">{{element['temperatura_1']}}</td>
         <td data-label="Druga Temperatura">{{element['temperatura_2']}}</td>
-        <td data-label="Prosecna Temperatura ">5</td>
+        <td data-label="Prosecna Temperatura ">{{(element['temperatura_1']+element['temperatura_2'])/2}}</td>
         <td data-label="Vlaznost Vazduha">{{element['vlaznost_vazduha']}}</td>
     </tr>
     {% endfor %}
-
-
-    <tr>
-        <td scope="row" data-label="Vreme">Visa - 6076</td>
-        <td data-label="Pritisak">03/01/2016</td>
-        <td data-label="Prva Temperatura">$2,443</td>
-        <td data-label="Druga Temperatura">02/01/2016 - 02/29/2016</td>
-        <td data-label="Prosecna Temperatura">02/01/2016 - 02/29/2016</td>
-        <td data-label="Vlaznost Vazduha">02/01/2016 - 02/29/2016</td>
-    </tr>
-    <tr>
-        <td scope="row" data-label="Vreme">Corporate AMEX</td>
-        <td data-label="Pritisak">03/01/2016</td>
-        <td data-label="Prva Temperatura">$1,181</td>
-        <td data-label="Druga Temperatura">02/01/2016 - 02/29/2016</td>
-        <td data-label="Prosecna Temperatura">02/01/2016 - 02/29/2016</td>
-        <td data-label="Vlaznost Vazduha">02/01/2016 - 02/29/2016</td>
-    </tr>
-    <tr>
-        <td scope="row" data-label="Vreme">Visa - 3412</td>
-        <td data-label="Pritisak">02/01/2016</td>
-        <td data-label="Prva Temperatura">$842</td>
-        <td data-label="Druga Temperatura">01/01/2016 - 01/31/2016</td>
-        <td data-label="Prosecna Temperatura">02/01/2016 - 02/29/2016</td>
-        <td data-label="Vlaznost Vazduha">02/01/2016 - 02/29/2016</td>
-    </tr>
     </tbody>
 </table>
 </body>

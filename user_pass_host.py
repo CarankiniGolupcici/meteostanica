@@ -1,8 +1,8 @@
 def procitajIstoriju():
     import mysql.connector
-    cnx = mysql.connector.connect(user='testing', password='testing',
-                                  host='192.168.2.102',
-                                  database='testing')
+    cnx = mysql.connector.connect(user='admin', password='admin',
+                                  host='127.0.0.1',
+                                  database='dbkarina')
     cursor = cnx.cursor()
     query = ("SELECT vreme, temperatura_1, temperatura_2, pritisak, vlaznost_vazduha FROM meteo_uslovi order by id desc limit 5")
 
