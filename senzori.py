@@ -1,4 +1,4 @@
-class senzori:
+class senzor:
     def getHumidityAndTemp(self):
         import Adafruit_DHT
         sensor = Adafruit_DHT.AM2302
@@ -8,8 +8,14 @@ class senzori:
             return humidity, temperature
         else:
             return 0,0
+
+class senzor1:
+    def getTemp(self):
+        import Adafruit_BMP.BMP085 as BMP085
+        sensor = BMP085.BMP085()
+        return sensor.read_temparature()
+
     def getPressure(self):
-        if pressure is not None:
-            return pressure
-        else:
-            return 0
+        import Adafruit_BMP.BMP085 as BMP085
+        sensor = BMP085.BMP085()
+        return sensor.read_pressure()
