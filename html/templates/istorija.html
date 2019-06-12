@@ -34,7 +34,7 @@
     {% for element in entries %}
     <tr>
         <td data-label="Vreme">{{element['vreme']}}</td>
-        <td data-label="Pritisak">{{element['pritisak']}}</td>
+        <td data-label="Pritisak">{{(element['pritisak']|int)/100}}</td>
         <td data-label="Prva Temperatura">{{element['temperatura_1']}}</td>
         <td data-label="Druga Temperatura">{{element['temperatura_2']}}</td>
         <td data-label="Prosecna Temperatura ">{{(element['temperatura_1']+element['temperatura_2'])/2}}</td>
