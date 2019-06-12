@@ -1,6 +1,13 @@
+Adafruit-BMP==1.5.4
+Adafruit-DHT==1.4.0
+Adafruit-GPIO==1.0.3
+Adafruit-PureIO==0.2.3
 Click==7.0
 Flask==1.0.2
 itsdangerous==1.1.0
 Jinja2==2.10.1
 MarkupSafe==1.1.1
+mysql-connector==2.2.9
+spidev==3.4
+uWSGI==2.0.18
 Werkzeug==0.15.2
