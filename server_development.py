@@ -17,7 +17,7 @@ def devserver(page):
         return render_template('sajt.html', temperatura=30, vazduh=30, pritisak=35, entries=entries)
     else:
         if page.endswith(".html"):
-            return render_template(page, temperatura=30, vazduh=30, pritisak=35, entries=entries)
+            return render_template(page, temperatura=30, vazduh=30, pritisak=35, element=entries)
         else:
             return "404"
 
